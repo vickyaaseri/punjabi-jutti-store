@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Punjabi Jutti Store</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5efe6;
+            color: #3e2723;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #8b4513;
+            font-weight: bold;
+        }
+
+        h1 {
+            font-size: 3em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 30px;
+            background: #fff8e1;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .section {
+            margin: 30px 0;
+            padding: 25px;
+            border-radius: 10px;
+            background: linear-gradient(135deg, #f7e1c3, #e0c3fc);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+            visibility: hidden;
+        }
+
+        .section.active {
+            opacity: 1;
+            transform: translateY(0);
+            visibility: visible;
+        }
+
+        p {
+            text-align: justify;
+            font-size: 18px;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #8b4513;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Our Mission</h1>
+        <div class="section active">
+            <h2>Our Mission</h2>
+            <p>
+                Our mission is to deliver exceptional footwear experiences that exceed expectations. We strive to create jutti that are not just stylish, but also comfortable and durable, reflecting the individuality and lifestyle of our customers.
+            </p>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.section').forEach(section => {
+                section.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>

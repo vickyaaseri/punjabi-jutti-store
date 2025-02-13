@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Punjabi Jutti Store</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            margin: 0;a
+            padding: 0;
+            background-color: #f5efe6;
+            color: #3e2723;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #8b4513;
+            font-weight: bold;
+        }
+
+        h1 {
+            font-size: 3em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 30px;
+            background: #fff8e1;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .section {
+            margin: 30px 0;
+            padding: 25px;
+            border-radius: 10px;
+            background: linear-gradient(135deg, #f7e1c3, #e0c3fc);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+            visibility: hidden;
+        }
+
+        .section.active {
+            opacity: 1;
+            transform: translateY(0);
+            visibility: visible;
+        }
+
+        p {
+            text-align: justify;
+            font-size: 18px;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #8b4513;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>About Us</h1>
+        <div class="section active">
+            <p>
+                <span class="highlight">Welcome to Punjabi Jutti Store, where tradition meets elegance.</span>
+            </p>
+            <p>
+                Our juttis are handcrafted by skilled artisans, ensuring quality and authenticity that reflect the rich heritage of Punjabi footwear. With a 100-year legacy of craftsmanship passed down through generations, we bring you footwear that embodies tradition and style.
+            </p>
+            <ul>
+                <li><span class="highlight">Handcrafted with Love:</span> Each pair is meticulously crafted by skilled artisans, ensuring attention to detail and exceptional quality.</li>
+                <li><span class="highlight">Real Leather:</span> Made from premium-quality leather, our juttis offer superior comfort, durability, and breathability.</li>
+                <li><span class="highlight">Timeless Designs:</span> Explore a diverse range of traditional and contemporary designs, from classic embroidered juttis to modern creations.</li>
+                <li><span class="highlight">Comfortable Fit:</span> Designed for comfort and flexibility, our juttis ensure all-day wearability.</li>
+                <li><span class="highlight">1-Year Guarantee:</span> We stand behind our craftsmanship with a 1-Year Guarantee on made-to-order juttis.</li>
+                <li><span class="highlight">Sustainable Practices:</span> Committed to ethical sourcing and sustainability, we ensure minimal environmental impact.</li>
+                <li><span class="highlight">Customer Satisfaction:</span> Our priority is providing an excellent shopping experience and unparalleled customer service.</li>
+            </ul>
+            <p>
+                Join us in celebrating the art of traditional footwear. Explore our collection and find the perfect pair of juttis to elevate your style.
+            </p>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.section').forEach(section => {
+                section.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>

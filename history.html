@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Punjabi Jutti Store</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5efe6;
+            color: #3e2723;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #8b4513;
+            font-weight: bold;
+        }
+
+        h1 {
+            font-size: 3em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 30px;
+            background: #fff8e1;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .section {
+            margin: 30px 0;
+            padding: 25px;
+            border-radius: 10px;
+            background: linear-gradient(135deg, #f7e1c3, #e0c3fc);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+            visibility: hidden;
+        }
+
+        .section.active {
+            opacity: 1;
+            transform: translateY(0);
+            visibility: visible;
+        }
+
+        p {
+            text-align: justify;
+            font-size: 18px;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        a {
+            color: #b45f06;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .image-container img {
+            max-width: 80%;
+            border-radius: 10px;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #8b4513;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Our History</h1>
+        <div class="section history">
+            <p>
+                <span class="highlight">The Legacy of Our Handcrafted Leather Juttis</span><br>
+                Our journey began in 1925 in a humble workshop in Sayad Wala, near Abohar in Punjab’s Fazilka district. Passed down through three generations, our family business is dedicated to crafting exquisite juttis that blend durability with elegance. Inspired by Punjab’s rich cultural heritage, our artisans have preserved traditional craftsmanship while embracing contemporary trends.
+            </p>
+
+            <p>
+                <span class="highlight">Craftsmanship & Quality</span><br>
+                Every jutti is meticulously handcrafted by skilled artisans who take pride in their work. By merging traditional techniques with modern designs, we ensure unmatched quality and attention to detail. Our commitment to customization was reinforced when we crafted a bespoke pair for a bride seeking the perfect fit—a philosophy we continue to uphold.
+            </p>
+
+            <p>
+                <span class="highlight">Premium Materials & Sustainability</span><br>
+                We source only the finest leather, ensuring durability, comfort, and a luxurious feel. Our commitment to sustainability means prioritizing eco-friendly materials and supporting local artisans, helping us minimize environmental impact while maintaining superior craftsmanship.
+            </p>
+
+            <p>
+                <span class="highlight">Customer Satisfaction</span><br>
+                Our priority is delivering an exceptional shopping experience. From personalized service to a diverse collection of styles, our juttis offer the perfect blend of comfort and style—ideal for everyday wear, festive occasions, or statement pieces.
+            </p>
+
+            <p>
+                <span class="highlight">Exclusive Designs & Customization</span><br>
+                Explore our unique collection of artisan-made juttis featuring a fusion of traditional motifs and modern aesthetics. For those seeking exclusivity, we offer customization options. Simply provide your foot measurements or reach out to us with specific design preferences. Choose from a variety of colors, embellishments, and embroidery to create your personalized masterpiece.
+            </p>
+
+            <p>
+                <span class="highlight">Shopping Made Easy</span><br>
+                <strong>Visit Our Store:</strong> Experience the charm of handcrafted leather juttis in person.<br>
+                <strong>Shop Online:</strong> Enjoy the convenience of doorstep delivery.<br>
+                <strong>Stay Connected:</strong> Follow us on social media for the latest designs, exclusive offers, and style inspiration.
+            </p>
+
+            <p>
+                <span class="highlight">Supporting Tradition & Community</span><br>
+                When you purchase from us, you're not just buying footwear—you're supporting a family-owned business and preserving a cherished tradition. Each pair carries the legacy of our ancestors and the passion of artisans who pour their skill into every stitch. By choosing our handcrafted juttis, you help us compete in a world where heritage craftsmanship meets modern demands, ensuring that our culture thrives for generations to come.
+            </p>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.section').forEach(section => {
+                section.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5efe6;
+            color: #3e2723;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #8b4513;
+            font-weight: bold;
+        }
+
+        h1 {
+            font-size: 3em;
+            text-transform: uppercase;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 30px;
+            background: #fff8e1;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .section {
+            margin: 30px 0;
+            padding: 20px;
+            border-radius: 10px;
+            background: linear-gradient(135deg, #f7e1c3, #e0c3fc);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+            visibility: hidden;
+        }
+
+        .section.active {
+            opacity: 1;
+            transform: translateY(0);
+            visibility: visible;
+        }
+
+        p {
+            text-align: justify;
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        a {
+            color: #b45f06;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .image-container img {
+            max-width: 80%;
+            border-radius: 10px;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+        }
+        .section.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>About Us</h1> <a href="abus.html"> About US</a>
+        <p>Welcome to Punjabi Jutti Store, where tradition meets elegance.</p>
+        
+        <div class="section history">
+            <h2>Our History</h2><a href="history.html">Our History</a>
+            <p>The Legacy of Our Handcrafted Leather Juttis...</p>
+        </div>
+
+        <div class="section mission">
+            <h2>Our Mission</h2><a href="mission.html">Our Mission</a>
+            <p>Our mission is to deliver exceptional footwear experiences...</p>
+        </div>
+
+        <div class="section values">
+            <h2>Our Values</h2> <a href="values.html">Our Values</a>
+            <p>Our core values include:</p>
+            <ul>
+                <li>Craftsmanship & Quality</li>
+                <li>Customer Satisfaction</li>
+                <li>Innovation & Creativity</li>
+                <li>Sustainability & Ethics</li>
+                <li>Family Tradition & Heritage</li>
+            </ul>
+        </div>
+    </div>
+     <script>
+        // Ensures sections fade in on page load
+       
+        window.addEventListener('scroll', () => {
+            document.querySelectorAll('.section').forEach((section) => {
+                let position = section.getBoundingClientRect().top;
+                let windowHeight = window.innerHeight;
+                if (position < windowHeight - 100) {
+                    section.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
